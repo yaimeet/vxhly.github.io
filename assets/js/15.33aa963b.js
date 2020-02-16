@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[15],{508:function(n,e,t){"use strict";t.r(e);var o=t(2),i=Object(o.a)({},(function(){var n=this.$createElement;return(this._self._c||n)("div",[this._v("\n demo 基础用法\n\n\\`\\`\\` vue\n<${config.prefix}-${compoenntName}></${config.prefix}-${compoenntName}>\n\\`\\`\\` \n\n\n")])}),[],!1,null,null,null);e.default=i.exports}}]);
