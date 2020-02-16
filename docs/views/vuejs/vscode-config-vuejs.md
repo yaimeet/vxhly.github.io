@@ -196,7 +196,6 @@ module.exports = {
   "eslint.autoFixOnSave": true,
   "files.autoSaveDelay": 500,
   "files.autoSave": "onFocusChange",
-  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   }
