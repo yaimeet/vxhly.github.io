@@ -13,4 +13,3 @@ git config --local user.email pengchengou@gmail.com
 # 如果发布到 https://<USERNAME>.github.io
 git push -f git@github.com:vxhly/vxhly.github.io.git master:gh-pages
 
-cd -
