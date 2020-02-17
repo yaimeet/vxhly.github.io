@@ -358,6 +358,46 @@ ports:
     
 ```
 
+### 拓展
+
+::: tip 提示
+windows 环境下不想使用 docker 的解决方案, 使用 `forever` + `verdaccio` 
+:::
+
+安装依赖
+
+``` bash
+npm i -g forever verdaccio
+```
+
+修改 `verdaccio` 的配置文件, 参考文件路径为 `C:/Users/Administrator/AppData/Roaming/verdaccio/config.yaml` （必须修改, 否则只能本机访问）, 在该文件内添加
+
+``` txt
+listen: 0.0.0.0:4873
+```
+
+编写 `bat` windows 脚本
+
+开始脚本 `forever-npm-start.bat`
+
+``` bat
+@echo off
+C:
+cd C:\Users\Administrator\AppData\Roaming\npm\node_modules\verdaccio\build\lib 
+forever start cli.js
+exit
+```
+
+结束脚本 `forever-npm-stop.bat`
+
+``` bat
+@echo off
+C:
+cd C:\Users\Administrator\AppData\Roaming\npm\node_modules\verdaccio\build\lib
+forever stop cli.js
+exit
+```
+
 ## 拓展
 
 ### CSS预处理SASS的默认实现将迁移到 Dart Sass
